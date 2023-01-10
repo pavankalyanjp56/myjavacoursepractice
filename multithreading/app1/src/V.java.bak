@@ -1,0 +1,11 @@
+class V
+{
+	public static void main(String[] args) 
+	{
+Thread t1 = Thread.currentThread();
+System.out.println(t1.getPriority());
+t1.setDaemon(10);
+System.out.println(t1.getPriority());
+	}
+}
+//we cannot able to convert the ,main thread to  daemon thread we get illegal exception
